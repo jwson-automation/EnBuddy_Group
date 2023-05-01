@@ -40,13 +40,13 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <router-view/>
     </q-page-container>
   </q-layout>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import {defineComponent, ref} from 'vue';
 import EssentialLink from 'components/EssentialLink.vue';
 
 const linksList = [

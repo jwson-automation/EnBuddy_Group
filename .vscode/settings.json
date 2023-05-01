@@ -2,15 +2,22 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "editor.codeActionsOnSave": [
-    "source.fixAll.eslint"
-  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "eslint.validate": [
     "javascript",
     "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": true
+    },
     "typescript",
-    "vue"
+    "typescriptreact"
   ],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5"
 }

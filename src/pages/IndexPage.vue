@@ -10,13 +10,13 @@
 </template>
 
 <script lang="ts">
-import { Todo, Meta } from 'components/models';
+import {Todo, Meta} from 'src/components/models';
 import ExampleComponent from 'components/ExampleComponent.vue';
-import { defineComponent, ref } from 'vue';
+import {defineComponent, ref} from 'vue';
 
 export default defineComponent({
   name: 'IndexPage',
-  components: { ExampleComponent },
+  components: {ExampleComponent},
   setup() {
     const todos = ref<Todo[]>([
       {
@@ -43,7 +43,7 @@ export default defineComponent({
     const meta = ref<Meta>({
       totalCount: 1200,
     });
-    return { todos, meta };
+    return {todos, meta};
   },
 });
 </script>
